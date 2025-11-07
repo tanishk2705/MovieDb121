@@ -1,5 +1,5 @@
-# Use lightweight Java 17 base image
-FROM openjdk:17-jdk-slim
+# Use maintained lightweight Java 17 base image (Eclipse Temurin)
+FROM eclipse-temurin:17-jdk-jammy
 
 # Copy the built JAR file into the container
 COPY target/moviedb-0.0.1-SNAPSHOT.jar app.jar
